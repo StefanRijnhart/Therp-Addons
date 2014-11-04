@@ -1,0 +1,257 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* trp_saved_selection
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1rc1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-07-12 16:23+0200\n"
+"PO-Revision-Date: 2012-02-21 14:01+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection,no_snail:0
+#: field:saved_selection.selection.init,no_mail:0
+msgid "Honour a no mail flag"
+msgstr "Respecteer blokkade op post"
+
+#. module: trp_saved_selection
+#: model:ir.model,name:trp_saved_selection.model_saved_selection_selection
+#: code:addons/trp_saved_selection/saved_selection.py:155
+#, python-format
+#. openerp-web
+#: addons/trp_saved_selection/static/src/js/chrome.js:135
+#, fuzzy
+msgid "Saved Selection"
+msgstr "Selectiebestand"
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection.init:0
+msgid "Call"
+msgstr "Bellen"
+
+#. module: trp_saved_selection
+#: constraint:saved_selection.selection:0
+msgid "Error: not a valid list of resource ids."
+msgstr "Fout: geen geldige lijst van record ids."
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection.init:0
+msgid "Mail"
+msgstr "Post"
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection.init:0
+msgid "Save"
+msgstr "Opslaan"
+
+#. module: trp_saved_selection
+#: code:addons/trp_saved_selection/act_window.py:29
+#: code:addons/trp_saved_selection/act_window.py:50
+#, python-format
+msgid "Error !"
+msgstr "Fout !"
+
+#. module: trp_saved_selection
+#: model:ir.model,name:trp_saved_selection.model_saved_selection_wizard_my
+msgid "saved_selection.selection.wizard.my"
+msgstr "saved_selection.selection.wizard.my"
+
+#. module: trp_saved_selection
+#: model:ir.model,name:trp_saved_selection.model_saved_selection_init
+msgid "Initialize Saved Selection"
+msgstr "Selectiebestand initialiseren"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection,no_email:0
+#: field:saved_selection.selection.init,no_email:0
+msgid "Honour a no e-mail flag"
+msgstr "Respecteer blokkade op e-mail"
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection.init:0
+msgid "E-Mail"
+msgstr "Email"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection,user_id:0
+#: view:saved_selection.selection:0
+msgid "User"
+msgstr "Medewerker"
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection.init:0
+msgid "Honour requests not to"
+msgstr "Respecteer blokkades op"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection,model_id:0
+#: field:saved_selection.selection.init,model_id:0
+msgid "Model"
+msgstr "Model"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection.init,discard_existing:0
+msgid "Discard current selection"
+msgstr "Huidige selectie overschrijven"
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection.init:0
+msgid "Saved Selection Initialization"
+msgstr "Initialiseren selectiebestand"
+
+#. module: trp_saved_selection
+#: code:addons/trp_saved_selection/act_window.py:29
+#: code:addons/trp_saved_selection/act_window.py:50
+#, python-format
+msgid "No act window for model = %s."
+msgstr "No act window for model = %s."
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection,no_call:0
+#: field:saved_selection.selection.init,no_call:0
+msgid "Honour a no call flag"
+msgstr "Respecteer blokkade op bellen"
+
+#. module: trp_saved_selection
+#: model:ir.model,name:trp_saved_selection.model_ir_actions_act_window
+msgid "ir.actions.act_window"
+msgstr "ir.actions.act_window"
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection.init:0
+msgid "Cancel"
+msgstr "Annuleer"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection,ids:0
+msgid "List of IDS"
+msgstr "Lijst van database-id's"
+
+#. openerp-web
+#: addons/trp_saved_selection/static/src/js/chrome.js:48
+#, fuzzy
+msgid "Saved selection may not be initialized yet."
+msgstr "Het selectiebestand is nog niet geïnitialiseerd."
+
+#. openerp-web
+#: addons/trp_saved_selection/static/src/js/chrome.js:108
+#, fuzzy
+msgid "Update saved selection"
+msgstr "Mijn actieve selectiebestand"
+
+#. openerp-web
+#: addons/trp_saved_selection/static/src/js/chrome.js:138
+msgid "Add"
+msgstr "Voeg toe"
+
+#. openerp-web
+#: addons/trp_saved_selection/static/src/js/chrome.js:142
+msgid "Delete"
+msgstr "Verwijderen"
+
+#. openerp-web
+#: addons/trp_saved_selection/static/src/js/chrome.js:146
+msgid "Intersection"
+msgstr "Doorsnede"
+
+#. openerp-web
+#: addons/trp_saved_selection/static/src/xml/base.xml:9
+#, fuzzy
+msgid "Initialize saved selection"
+msgstr "Selectiebestand initialiseren"
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection:0
+#: field:saved_selection.selection,user_ids:0
+msgid "User Access"
+msgstr "Medewerkertoegang"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection,active_selection:0
+msgid "Active Selection"
+msgstr "Actief selectiebestand"
+
+#. module: trp_saved_selection
+#: code:addons/trp_saved_selection/model/saved_selection.py:131
+#, python-format
+msgid "%d removed, total %d"
+msgstr "%d verwijderd, totaal %d"
+
+#. module: trp_saved_selection
+#: code:addons/trp_saved_selection/model/saved_selection.py:318
+#: constraint:saved_selection.selection:0
+#, python-format
+msgid "Error: not a valid list of resource ids."
+msgstr "Fout: geen geldige lijst van record-ids"
+
+#. module: trp_saved_selection
+#: code:addons/trp_saved_selection/model/saved_selection.py:128
+#, python-format
+msgid "%d added, total %d"
+msgstr "%d toegevoegd, totaal %d"
+
+#. module: trp_saved_selection
+#: code:addons/trp_saved_selection/model/saved_selection.py:92
+#, python-format
+msgid "Error: selection is initialized for items of type %s"
+msgstr "Fout: selectiebestand is geïnitialiseerd op records van type %s"
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection.init:0
+msgid "Initialize"
+msgstr "Initialiseer"
+
+#. module: trp_saved_selection
+#: view:saved_selection.selection:0
+msgid "Saved Selections"
+msgstr "Selectiebestanden"
+
+#. module: trp_saved_selection
+#: code:addons/trp_saved_selection/model/saved_selection.py:232
+#: model:ir.model,name:trp_saved_selection.model_saved_selection_selection
+#: model:ir.ui.menu,name:trp_saved_selection.menu_saved_selection_main
+#: view:saved_selection.selection:0
+#, python-format
+msgid "Saved Selection"
+msgstr "Selectiebestand"
+
+#. module: trp_saved_selection
+#: field:res.users,saved_selection_id:0
+msgid "Active Saved Selection"
+msgstr "Actief selectiebestand"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection,name:0
+#: field:saved_selection.selection.init,name:0
+msgid "Name"
+msgstr "Naam"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection,create_date:0
+msgid "Creation date"
+msgstr "Aanmaakdatum"
+
+#. module: trp_saved_selection
+#: field:saved_selection.selection.init,existing:0
+msgid "Existing selection"
+msgstr "Bestaand selectiebestand"
+
+#. module: trp_saved_selection
+#: code:addons/trp_saved_selection/model/saved_selection.py:133
+#, python-format
+msgid "Nothing to do, total %d"
+msgstr "Niets te doen, totaal %d"
+
+#. module: trp_saved_selection
+#: model:ir.actions.act_window,name:trp_saved_selection.action_my_saved_selections
+#: model:ir.ui.menu,name:trp_saved_selection.menu_my_saved_selections
+msgid "My Saved Selections"
+msgstr "Mijn selectiebestanden"
