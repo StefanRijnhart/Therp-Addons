@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="seq_invoice_customs" model="ir.sequence">
+            <field name="name">Customs invoice sequence</field>
+            <field name="prefix">%(year)s</field>
+            <field name="padding">4</field>
+        </record>
+    </data>
+</openerp>

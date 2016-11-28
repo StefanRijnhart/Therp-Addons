@@ -40,6 +40,7 @@ delete the existing one.
         'sale'
     ],
     "data": [
+        'data/ir_sequence.xml',
         'view/sale_invoice_customs.xml',
     ],
     "js": [

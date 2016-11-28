@@ -100,10 +100,14 @@ class stock_picking_out(orm.Model):
 
         invoice_vals = self.pool['sale.order']._prepare_invoice(
             cr, uid, order, invoice_line_ids, context=context)
+        sequence_id = self.pool['ir.model.data'].get_object_reference(
+            cr, uid, 'sale_invoice_customs', 'seq_invoice_customs')[1]
+        number = self.pool.get('ir.sequence').next_by_id(
+            cr, uid, sequence_id, context=context)
         invoice_vals.update(
             active=False,
             customs_invoice_for_picking_ids=[(6, 0, [ids[0]])],
-            )
+            customs_invoice_number=number)
         return invoice_vals
 
     def _make_invoice(self, cr, uid, ids, order, context=None):

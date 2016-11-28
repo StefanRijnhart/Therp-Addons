@@ -30,6 +30,8 @@ class account_invoice(orm.Model):
         'customs_invoice_for_picking_ids': fields.one2many(
             'stock.picking', 'customs_invoice_id',
             'Customs invoice for picking', readonly=True),
+        'customs_invoice_number': fields.char(
+            'Customs invoice number', readonly=True),
     }
 
     _defaults = {
