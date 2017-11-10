@@ -62,25 +62,31 @@ class stock_picking_out(orm.Model):
         """
         line = stock_move.sale_line_id
         price_unit = line.price_unit
-        if stock_move.product_uom != stock_move.product_uos:
-            price_unit = float_round(
-                line.price_unit * (
-                    stock_move.product_uom_qty / stock_move.product_uos_qty),
-                self.pool.get('decimal.precision').precision_get(
-                    cr, uid, 'Product Price'))
+        quantity = stock_move.product_qty
+        uom = stock_move.product_uom
+        if stock_move.product_uos:
+            if stock_move.product_uom != stock_move.product_uos:
+                price_unit = float_round(
+                    line.price_unit * (
+                        stock_move.product_qty /
+                        stock_move.product_uos_qty),
+                    self.pool.get('decimal.precision').precision_get(
+                        cr, uid, 'Product Price'))
+                quantity = stock_move.product_uos_qty
+                uom = stock_move.product_uos
 
         return {
             'name': line.name,
             'sequence': line.sequence,
             'origin': line.order_id.name,
             'price_unit': price_unit,
-            'quantity': stock_move.product_uos_qty,
+            'quantity': quantity,
             'discount': line.discount,
-            'uos_id': stock_move.product_uos.id,
+            'uos_id': uom.id,
             'product_id': line.product_id.id,
             'invoice_line_tax_id': [(6, 0, [x.id for x in line.tax_id])],
             'account_analytic_id': line.order_id.project_id.id,
-            }
+        }
 
     def _prepare_customs_invoice(self, cr, uid, ids, order, context=None):
         """
